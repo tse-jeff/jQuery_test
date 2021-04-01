@@ -13,22 +13,7 @@
   <div id="first"></div>
 
   <img id="orca" src="Orca.jpg" />
-  <script>
-    $(function () {
-      var img = $("#orca"),
-        width = img.get(0).width,
-        screenWidth = $(window).width(),
-        duration = 5000;
-
-      function animateImg() {
-        img.css("left", -width).animate({
-          "left": screenWidth
-        }, duration, animateImg);
-      }
-
-      animateImg();
-    });
-  </script>
+  <script src="animate.js"></script>
 </body>
 
 </html>

@@ -8,5 +8,7 @@ body {
 }
 
 #orca {
-	position: absolute; left: -1000px; width: 100vh /* <- not relevant for the animation */ 
+	position: absolute;
+	left: -1000px;
+	width: 100vh;
 }
