@@ -1,3 +1,4 @@
+// original function
 $(function () {
     var img = $("#orca"),
         width = img.get(0).width,
@@ -13,6 +14,7 @@ $(function () {
     animateImg();
 });
 
+// trying to use the same structure for another picture
 $(function () {
     var img = $("#dango"),
         width = img.get(0).width,
