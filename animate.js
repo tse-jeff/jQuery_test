@@ -29,3 +29,17 @@ $(function () {
     
     animateImg();
 });
+
+// change the heading using jQuery
+var newHeading = prompt("What's the new heading?");
+$("#heading").text(newHeading);
+
+// try adding a navbar
+$("#navbar").append(`
+    <div id="navbar">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="contact.html" class="right">contact me</a>
+    </div>
+    `);
