@@ -31,15 +31,33 @@ $(function () {
 });
 
 // change the heading using jQuery
-var newHeading = prompt("What's the new heading?");
-$("#heading").text(newHeading);
+// var newHeading = prompt("What's the new heading?");
+// $("#heading").text(newHeading);
 
 // try adding a navbar
-$("#navbar").append(`
-    <div id="navbar">
+$("#navbar").append(
+    `<div id="navbar">
       <a href="index.html">home</a>
-      <a href="about.html">about</a>
-      <a href="projects.html">projects</a>
-      <a href="contact.html" class="right">contact me</a>
-    </div>
-    `);
+      <a href="interact.html">interactive</a>
+    </div>`
+    );
+
+// fading out an element
+// $("#orca").fadeOut(10000).fadeIn(1000);
+// $("#dango").fadeOut(5000).fadeIn(1000);
+var fading = () => $("h1").fadeOut(3000).fadeIn(2000);
+
+// slideup and down
+// $("h1").slideUp(3000).slideDown(2000);
+
+// settimeout
+function timeUp() {
+    alert("Time is up!");
+}
+var timeoutID = setTimeout(timeUp, 5000);
+
+// clearTimeout can stop the timeout function with specific ID
+clearTimeout(timeoutID);
+
+// setInterval can call a function with a given time
+setInterval(fading, 5000);
