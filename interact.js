@@ -20,3 +20,12 @@ var moveHeading = function () {
 
 // calls moveHeading function every 1 millisecond
 setInterval(moveHeading, 1);
+
+// responding to clicks
+function clickHandler(event) {
+  console.log("Click! " + event.pageX + " " + event.pageY);
+}
+
+$("h1").click(clickHandler);
+
+// This simply prints to console when the text is clicked.
