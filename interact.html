@@ -13,23 +13,6 @@
   <h1 id="heading">interactive programming</h1>
   <script src="interact.js"></script>
 
-  <!-- This script makes the heading move to 200 and then resart -->
-  <script>
-    var leftOffset = 0;
-
-    var moveHeading = function () {
-      $("#heading").offset({left: leftOffset});
-
-      leftOffset++;
-
-      if (leftOffset > 200) {
-        leftOffset = 0;
-      }
-    }
-
-    setInterval(moveHeading, 30);
-  </script>
-
 </body>
 
 </html>
