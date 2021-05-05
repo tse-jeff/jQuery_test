@@ -36,6 +36,28 @@ $("html").mousemove(function (event) {
     left: event.pageX,
     top: event.pageY
   });
+
+  /* one implementation of following
+  problems:
+    - the following only occurs if the mouse moves
+    - the follow moves only in 8 directions instead of 
+      directly towards the mouse.
+  */
+  var follow_offset = $("#slow_follow").offset();
+  var newLeft = follow_offset.left;
+  var newTop = follow_offset.top;
+  if (follow_offset.left < event.pageX)
+    newLeft++;
+  else
+    newLeft--;
+  if (follow_offset.top < event.pageY)
+    newTop++;
+  else
+    newTop--;
+  $("#slow_follow").offset({
+    left: newLeft,
+    top: newTop
+  });
 });
 
 
