@@ -33,8 +33,8 @@ $("h1").click(clickHandler);
 // this functions makes something follow the mouse
 $("html").mousemove(function (event) {
   $("#mousemove").offset({
-    left: event.pageX,
-    top: event.pageY
+    left: event.pageX - 100,
+    top: event.pageY + 25
   });
 
   /* one implementation of following
