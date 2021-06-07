@@ -39,6 +39,7 @@ $("#navbar").append(
     `<div id="navbar">
       <a href="index.html">home</a>
       <a href="interact.html">interactive</a>
+      <a href="cssgrid.html">grid</a>
     </div>`
     );
 
