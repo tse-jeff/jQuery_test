@@ -44,6 +44,10 @@ body {
 }
 
 .grid {
-	grid-template-columns: repeat(3, auto);
-	grid-template-rows: repeat(3, auto);
+	grid-template:
+    [row1-start] "header header header" 25px [row1-end]
+    [row2-start] "footer footer footer" 25px [row2-end]
+    / auto 50px auto;
+	column-gap: 10px;
+	row-gap: 16px;
 }
