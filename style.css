@@ -51,3 +51,9 @@ body {
 	column-gap: 10px;
 	row-gap: 16px;
 }
+
+
+.grid-item-1 {
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
